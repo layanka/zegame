@@ -7,3 +7,27 @@ requires-python = ">=3.12"
 dependencies = [
     "ursina>=7.0.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-quotes
+    "Q",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
